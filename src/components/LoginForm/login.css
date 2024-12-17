@@ -1,0 +1,140 @@
+/* General styles for the form container */
+.track-easy-login-form {
+  background: white;
+  border-radius: 12px;
+  border: 5px solid transparent;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+
+  /* Flexbox centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Title styles */
+.track-easy-login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Input group styles */
+.track-easy-input-group {
+  margin-bottom: 16px;
+}
+
+.track-easy-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.track-easy-input:focus {
+  box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+}
+
+/* Error message styles */
+.track-easy-error-message {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* Button group styles */
+.track-easy-button-group {
+  margin-top: 20px;
+}
+
+.track-easy-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.track-easy-submit-btn {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.track-easy-submit-btn:hover {
+  background-color: #3d8b40;
+  transform: translateY(-2px);
+}
+
+.track-easy-submit-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.track-easy-signup-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.track-easy-signup-btn:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+.track-easy-forgot-password-btn {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.track-easy-forgot-password-btn:hover {
+  background-color: #f57c00;
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+
+/* Ensure proper scaling of the form on small screens */
+@media (max-width: 768px) {
+  .track-easy-login-form {
+    padding: 16px;
+    max-width: 90%;
+  }
+
+  .track-easy-login-title {
+    font-size: 1.5rem;
+  }
+
+  .track-easy-input {
+    font-size: 0.9rem;
+  }
+
+  .track-easy-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .track-easy-login-title {
+    font-size: 1.25rem;
+  }
+
+  .track-easy-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}

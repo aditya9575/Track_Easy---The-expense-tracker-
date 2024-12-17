@@ -1,0 +1,96 @@
+/* Base styles for the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e0000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header container styles */
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header title styles */
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f3eeee;
+  margin: 0;
+  text-align: center;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: rgb(65, 62, 62);
+}
+
+/* Icon styles */
+.toggle-btn svg {
+  stroke: white;
+}
+
+/* Gradient background applied to the body */
+body.gradient-bg {
+  background: radial-gradient(
+    circle at 0.3% 1.3%,
+    rgb(235, 217, 221) 0%,
+    rgb(216, 174, 211) 45.1%,
+    rgb(145, 130, 196) 100.2%
+  );
+  transition: background 0.3s ease-in-out;
+}
+
+/* Toggle button active state */
+.toggle-btn.active {
+  background-color: #3d3d3d;
+}
+
+/* Accessible hover state for toggle button */
+.toggle-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.25rem;
+  }
+  .toggle-btn {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1rem;
+  }
+}
+
+/* Gradient background applied to the body */
+/* body.gradient-bg {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  transition: background 0.3s ease-in-out;
+} */

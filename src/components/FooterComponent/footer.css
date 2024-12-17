@@ -1,0 +1,87 @@
+/* Footer Main Styling */
+.footer {
+  background-color: #1c1c1e;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 100%; /* Ensures the footer spans the entire width */
+  z-index: 10; /* Keeps the footer above other elements */
+  margin-top: 40px; /* Add margin to create space above the footer */
+  /* position: static; */
+  box-sizing: border-box;
+}
+
+/* Footer container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer content styling */
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Icon styling */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #4caf50;
+  transform: scale(1.2);
+}
+
+/* Copyright section */
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-icons a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content h3 {
+    font-size: 1rem;
+  }
+
+  .footer-icons {
+    gap: 10px;
+  }
+
+  .footer-icons a {
+    font-size: 1rem;
+  }
+}

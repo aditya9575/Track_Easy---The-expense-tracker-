@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------------------------- */
+/* Base layout styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: 100%; */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(226, 240, 254) 0%,
+    rgb(255, 247, 228) 90%
+  );
+  color: #333;
+}
+
+/* App container for sticky footer */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1; /* Ensures this section takes up available space */
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  height: 100vh !important; /* Full viewport height */
+  margin: 0; /* Removes any extra margin */
+  padding: 0; /* Optional: Adjust as needed */
+  /* Optional background color or styling */
+  /* background-color: #f9f9f9; */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

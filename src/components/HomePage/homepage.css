@@ -1,0 +1,139 @@
+/* General styles for the homepage container */
+.homepage {
+  height: 100vh !important;
+  /* position: relative; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Welcome and profile section styles */
+.homepage__top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homepage__welcome h4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.homepage__profile h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.homepage__profile a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.homepage__profile a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Divider styles */
+.homepage__divider {
+  width: 90%;
+  border: 0;
+  border-top: 4px solid black;
+  margin: 20px 0;
+  opacity: 0.6;
+}
+
+/* Action button section styles */
+.homepage__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.homepage__button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.homepage__button:hover {
+  background-color: #3d8b40;
+  transform: translateY(-2px);
+}
+
+.homepage__button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .homepage {
+    padding: 10px;
+  }
+
+  .homepage__welcome h4,
+  .homepage__profile h4 {
+    font-size: 1.25rem;
+  }
+
+  .homepage__divider {
+    width: 90%;
+  }
+
+  .homepage__button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage__welcome h4,
+  .homepage__profile h4 {
+    font-size: 1rem;
+  }
+
+  .homepage__button {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+}
+
+.homepage__button-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.homepage__button-link:hover {
+  background-color: #45a049;
+}
